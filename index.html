@@ -1,50 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Ronald Reagan - 40th President of the USA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        Welcome to My Website
+        <h1>Ronald Reagan</h1>
+        <p>40th President of the United States (1981–1989)</p>
     </header>
 
-    <section>
-        <h2>Hello, World!</h2>
-        <p>This is a simple website hosted on GitHub Pages.</p>
+    <section class="hero">
+        <img src="reagan-hero.jpg" alt="Ronald Reagan" class="hero-img">
+        <h2>"Government's first duty is to protect the people, not run their lives." - Ronald Reagan</h2>
+    </section>
+
+    <section class="bio">
+        <h2>Biography</h2>
+        <p>Ronald Wilson Reagan (1911–2004) was an American politician and actor who served as the 40th president of the United States from 1981 to 1989. Before his presidency, he was a Hollywood actor and the Governor of California (1967–1975).</p>
+        <button onclick="showMore()">Read More</button>
+        <p id="more-text" class="hidden">Reagan's presidency was marked by conservative economic policies, the end of the Cold War, and a strong stance against the Soviet Union. His famous "Reaganomics" policy emphasized tax cuts and deregulation.</p>
+    </section>
+
+    <section class="achievements">
+        <h2>Key Achievements</h2>
+        <div class="achievement">
+            <img src="reagan-cold-war.jpg" alt="Reagan and Gorbachev">
+            <p><b>End of the Cold War:</b> Played a significant role in the fall of the Soviet Union.</p>
+        </div>
+        <div class="achievement">
+            <img src="reagan-economic.jpg" alt="Reagan Economic Policies">
+            <p><b>Economic Policies:</b> Introduced Reaganomics, which reduced taxes and stimulated growth.</p>
+        </div>
+        <div class="achievement">
+            <img src="reagan-speech.jpg" alt="Reagan Speech">
+            <p><b>Great Communicator:</b> Famous for speeches like "Mr. Gorbachev, tear down this wall!"</p>
+        </div>
     </section>
 
     <footer>
-        © 2025 My GitHub Website
+        <p>© 2025 Ronald Reagan Tribute. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
