@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Did Reagan Say This? - Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Did Reagan Say This?</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='biography.html'">Biography</button>
+      <button onclick="location.href='guessing.html'">Guessing Game</button>
+    </nav>
+  </header>
+  
+  <main>
+    <div id="game-container">
+      <p id="quote">Loading quote...</p>
+      <div id="buttons">
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+      </div>
+      <p id="result"></p>
+      <p id="score">Score: 0</p>
+      <button id="next-btn">Next Quote</button>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Ronald Reagan Tribute. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // Pool of quotes: some that Reagan said (isReagan: true) and some he did not (isReagan: false)
+    const quotes = [
+      { text: "Mr. Gorbachev, tear down this wall!", isReagan: true },
+      { text: "The only thing we have to fear is fear itself.", isReagan: false },
+      { text: "Government's first duty is to protect the people, not run their lives.", isReagan: true },
+      { text: "Ask not what your country can do for you, ask what you can do for your country.", isReagan: false },
+      { text: "Freedom is never more than one generation away from extinction.", isReagan: true }
+    ];
+
+    let currentQuote = null;
+    let score = 0;
+
+    const quoteEl = document.getElementById("quote");
+    const resultEl = document.getElementById("result");
+    const scoreEl = document.getElementById("score");
+    const yesBtn = document.getElementById("yes-btn");
+    const noBtn = document.getElementById("no-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+
+    function displayQuote() {
+      currentQuote = getRandomQuote();
+      quoteEl.textContent = currentQuote.text;
+      resultEl.textContent = "";
+    }
+
+    function updateScore() {
+      scoreEl.textContent = "Score: " + score;
+    }
+
+    yesBtn.addEventListener("click", function() {
+      if (currentQuote) {
+        if (currentQuote.isReagan) {
+          resultEl.textContent = "Correct! Reagan did say that.";
+          score++;
+        } else {
+          resultEl.textContent = "Incorrect. Reagan did not say that.";
+        }
+        updateScore();
+      }
+    });
+
+    noBtn.addEventListener("click", function() {
+      if (currentQuote) {
+        if (!currentQuote.isReagan) {
+          resultEl.textContent = "Correct! Reagan did not say that.";
+          score++;
+        } else {
+          resultEl.textContent = "Incorrect. Reagan did say that.";
+        }
+        updateScore();
+      }
+    });
+
+    nextBtn.addEventListener("click", function() {
+      displayQuote();
+    });
+
+    // Initialize the game
+    displayQuote();
+    updateScore();
+  </script>
+</body>
+</html>
