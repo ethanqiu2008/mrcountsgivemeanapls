@@ -3,100 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ronald Reagan - A Modern Tribute</title>
+  <title>Ronald Reagan - Life, Legacy &amp; Leadership</title>
   <!-- Google Fonts for modern typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Link to external CSS (make sure to create style.css with your desired transitions) -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+  <!-- HEADER & NAVIGATION -->
+  <header id="header">
     <nav class="navbar">
       <div class="logo">Ronald Reagan</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#bio">Biography</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#media">Media</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="mobile-menu-icon">
-        <span>&#9776;</span>
-      </div>
+      <div class="mobile-menu-icon">&#9776;</div>
     </nav>
-    <div class="header-content">
+    <div class="header-content transition">
       <h1>Ronald Reagan</h1>
-      <p>40th President of the United States (1981–1989)</p>
+      <p>Celebrating the life, legacy, and leadership of the 40th President</p>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-      <div class="hero-overlay">
-        <h2>"Government's first duty is to protect the people, not run their lives."</h2>
-      </div>
-    </section>
-
-    <!-- Biography Section -->
-    <section id="bio" class="section bio-section">
-      <div class="container">
-        <h2>Biography</h2>
-        <div class="bio-content">
-          <img src="reagan-portrait.jpg" alt="Ronald Reagan Portrait" class="bio-img" />
-          <div class="bio-text">
-            <p>
-              Ronald Wilson Reagan (1911–2004) was an American politician, actor, and the 40th president of the United States. Before his presidency, he served as the Governor of California and was a well-known Hollywood actor.
-            </p>
-            <p id="more-text" class="hidden">
-              Reagan's leadership was marked by conservative economic policies, famously dubbed "Reaganomics", a strategic approach during the Cold War, and a charismatic style that earned him the title "The Great Communicator." His policies and public speeches remain influential in American politics.
-            </p>
-            <button id="read-more-btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="section achievements-section">
-      <div class="container">
-        <h2>Key Achievements</h2>
-        <div class="achievements-grid">
-          <div class="achievement-card">
-            <img src="reagan-cold-war.jpg" alt="Reagan with Gorbachev" />
-            <h3>End of the Cold War</h3>
-            <p>Played a pivotal role in reducing Cold War tensions, leading to the eventual fall of the Soviet Union.</p>
-          </div>
-          <div class="achievement-card">
-            <img src="reagan-economic.jpg" alt="Reaganomics" />
-            <h3>Reaganomics</h3>
-            <p>Implemented significant tax cuts and deregulation, influencing economic policies for decades.</p>
-          </div>
-          <div class="achievement-card">
-            <img src="reagan-speech.jpg" alt="Reagan Speech" />
-            <h3>Great Communicator</h3>
-            <p>Famous for his inspirational speeches and persuasive public communication.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section (Placeholder) -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>For more information or inquiries, please get in touch!</p>
-        <!-- You can replace this with a form or additional contact details -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 Ronald Reagan Tribute. All rights reserved.</p>
+  <!-- HERO SECTION WITH TRANSITION -->
+  <section id="hero" class="hero-section transition">
+    <div class="hero-overlay">
+      <h2>"Government's first duty is to protect the people, not run their lives."</h2>
+      <p>Experience the journey through his remarkable life</p>
+      <a href="#bio" class="btn">Discover More</a>
     </div>
-  </footer>
+  </section>
 
+  <!-- BIOGRAPHY SECTION -->
+  <section id="bio" class="section bio-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Biography</h2>
+        <p>An in-depth look at his early life, career, and presidency</p>
+      </header>
+      <div class="bio-content">
+        <article class="bio-text">
+          <p>
+            Ronald Wilson Reagan (1911–2004) was an American politician, actor, and the 40th President of the United States. Known as "The Great Communicator," he captivated millions with his charisma and leadership.
+          </p>
+          <p class="expandable hidden">
+            Before his presidency, Reagan enjoyed a flourishing career in Hollywood and later served as the Governor of California. His presidency was characterized by bold economic reforms—dubbed "Reaganomics"—and a steadfast approach during the Cold War. His legacy is one of transforming political discourse in America.
+          </p>
+          <button id="read-more-btn" class="btn">Read More</button>
+        </article>
+        <aside class="bio-image">
+          <img src="reagan-portrait.jpg" alt="Ronald Reagan Portrait" />
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE SECTION -->
+  <section id="timeline" class="section timeline-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Timeline</h2>
+        <p>A chronological journey through key moments of his life</p>
+      </header>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">1911</div>
+          <div class="timeline-content">
+            <h3>Birth</h3>
+            <p>Born in Tampico, Illinois, marking the beginning of a remarkable life.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1940s</div>
+          <div class="timeline-content">
+            <h3>Hollywood Stardom</h3>
+            <p>Rose to fame as a Hollywood actor, captivating audiences nationwide.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1967</div>
+          <div class="timeline-content">
+            <h3>Governor of California</h3>
+            <p>Led the state as its 33rd Governor, demonstrating his executive prowess.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1981</div>
+          <div class="timeline-content">
+            <h3>Presidency</h3>
+            <p>Inaugurated as the 40th President, initiating a transformative era in U.S. history.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1989</div>
+          <div class="timeline-content">
+            <h3>Enduring Legacy</h3>
+            <p>Left office with a legacy that continues to shape American politics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTES SECTION -->
+  <section id="quotes" class="section quotes-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Memorable Quotes</h2>
+        <p>Words that resonated with a nation</p>
+      </header>
+      <div class="quotes-slider">
+        <blockquote>
+          <p>"Mr. Gorbachev, tear down this wall!"</p>
+          <cite>– Ronald Reagan</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Freedom is never more than one generation away from extinction."</p>
+          <cite>– Ronald Reagan</cite>
+        </blockquote>
+        <blockquote>
+          <p>"The most terrifying words in the English language are: I'm from the government and I'm here to help."</p>
+          <cite>– Ronald Reagan</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA GALLERY SECTION -->
+  <section id="media" class="section media-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Media Gallery</h2>
+        <p>Photos and videos capturing iconic moments</p>
+      </header>
+      <div class="media-gallery">
+        <figure class="media-item">
+          <img src="reagan-hero.jpg" alt="Ronald Reagan in Action" />
+          <figcaption>Ronald Reagan at a public event</figcaption>
+        </figure>
+        <figure class="media-item">
+          <img src="reagan-speech.jpg" alt="Reagan Giving a Speech" />
+          <figcaption>Delivering an iconic speech</figcaption>
+        </figure>
+        <figure class="media-item">
+          <img src="reagan-economic.jpg" alt="Reagan in the Oval Office" />
+          <figcaption>In the Oval Office</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements" class="section achievements-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Achievements</h2>
+        <p>Highlights of a transformative career</p>
+      </header>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <img src="reagan-cold-war.jpg" alt="Reagan with Gorbachev" />
+          <h3>End of the Cold War</h3>
+          <p>Instrumental in easing tensions and fostering dialogue during the Cold War.</p>
+        </div>
+        <div class="achievement-card">
+          <img src="reagan-economic.jpg" alt="Reaganomics" />
+          <h3>Reaganomics</h3>
+          <p>Implemented economic policies focused on tax cuts and deregulation, influencing future generations.</p>
+        </div>
+        <div class="achievement-card">
+          <img src="reagan-speech.jpg" alt="Reagan Speech" />
+          <h3>Great Communicator</h3>
+          <p>His inspiring speeches and leadership left an indelible mark on American society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-section transition">
+    <div class="container">
+      <header class="section-header">
+        <h2>Contact</h2>
+        <p>Reach out for more information or to share your thoughts</p>
+      </header>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- External JavaScript for transitions and interactions -->
   <script src="script.js"></script>
 </body>
 </html>
