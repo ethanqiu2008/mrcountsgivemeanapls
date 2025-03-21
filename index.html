@@ -1,51 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronald Reagan - 40th President of the USA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronald Reagan - A Modern Tribute</title>
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ronald Reagan</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#bio">Biography</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-icon">
+        <span>&#9776;</span>
+      </div>
+    </nav>
+    <div class="header-content">
+      <h1>Ronald Reagan</h1>
+      <p>40th President of the United States (1981–1989)</p>
+    </div>
+  </header>
 
-    <header>
-        <h1>Ronald Reagan</h1>
-        <p>40th President of the United States (1981–1989)</p>
-    </header>
-
-    <section class="hero">
-        <img src="reagan-hero.jpg" alt="Ronald Reagan" class="hero-img">
-        <h2>"Government's first duty is to protect the people, not run their lives." - Ronald Reagan</h2>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay">
+        <h2>"Government's first duty is to protect the people, not run their lives."</h2>
+      </div>
     </section>
 
-    <section class="bio">
+    <!-- Biography Section -->
+    <section id="bio" class="section bio-section">
+      <div class="container">
         <h2>Biography</h2>
-        <p>Ronald Wilson Reagan (1911–2004) was an American politician and actor who served as the 40th president of the United States from 1981 to 1989. Before his presidency, he was a Hollywood actor and the Governor of California (1967–1975).</p>
-        <button onclick="showMore()">Read More</button>
-        <p id="more-text" class="hidden">Reagan's presidency was marked by conservative economic policies, the end of the Cold War, and a strong stance against the Soviet Union. His famous "Reaganomics" policy emphasized tax cuts and deregulation.</p>
+        <div class="bio-content">
+          <img src="reagan-portrait.jpg" alt="Ronald Reagan Portrait" class="bio-img" />
+          <div class="bio-text">
+            <p>
+              Ronald Wilson Reagan (1911–2004) was an American politician, actor, and the 40th president of the United States. Before his presidency, he served as the Governor of California and was a well-known Hollywood actor.
+            </p>
+            <p id="more-text" class="hidden">
+              Reagan's leadership was marked by conservative economic policies, famously dubbed "Reaganomics", a strategic approach during the Cold War, and a charismatic style that earned him the title "The Great Communicator." His policies and public speeches remain influential in American politics.
+            </p>
+            <button id="read-more-btn">Read More</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="achievements">
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
         <h2>Key Achievements</h2>
-        <div class="achievement">
-            <img src="reagan-cold-war.jpg" alt="Reagan and Gorbachev">
-            <p><b>End of the Cold War:</b> Played a significant role in the fall of the Soviet Union.</p>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <img src="reagan-cold-war.jpg" alt="Reagan with Gorbachev" />
+            <h3>End of the Cold War</h3>
+            <p>Played a pivotal role in reducing Cold War tensions, leading to the eventual fall of the Soviet Union.</p>
+          </div>
+          <div class="achievement-card">
+            <img src="reagan-economic.jpg" alt="Reaganomics" />
+            <h3>Reaganomics</h3>
+            <p>Implemented significant tax cuts and deregulation, influencing economic policies for decades.</p>
+          </div>
+          <div class="achievement-card">
+            <img src="reagan-speech.jpg" alt="Reagan Speech" />
+            <h3>Great Communicator</h3>
+            <p>Famous for his inspirational speeches and persuasive public communication.</p>
+          </div>
         </div>
-        <div class="achievement">
-            <img src="reagan-economic.jpg" alt="Reagan Economic Policies">
-            <p><b>Economic Policies:</b> Introduced Reaganomics, which reduced taxes and stimulated growth.</p>
-        </div>
-        <div class="achievement">
-            <img src="reagan-speech.jpg" alt="Reagan Speech">
-            <p><b>Great Communicator:</b> Famous for speeches like "Mr. Gorbachev, tear down this wall!"</p>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 Ronald Reagan Tribute. All rights reserved.</p>
-    </footer>
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>For more information or inquiries, please get in touch!</p>
+        <!-- You can replace this with a form or additional contact details -->
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p>© 2025 Ronald Reagan Tribute. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
